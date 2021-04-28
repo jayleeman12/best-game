@@ -12,7 +12,7 @@ socket.on('connect', () => {
       },
       // body: 'sdfasdf'
       body: JSON.stringify({
-        socket_ids: [socket.id]
+        socket_ids: socket.id
       })
     })).json());
   }, 5000);
